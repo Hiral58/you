@@ -1,0 +1,133 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior:smooth;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+list-style: none;
+text-decoration: none;
+
+}
+
+header{
+position: fixed;
+width: 100%;
+top: 0;
+right: 0;
+
+z-index: 1000;
+
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+padding: 20px 10%;
+/*padding-top: 50px;*/
+background-color: #ffffff; 
+transition: 0.3s ease-in;
+box-shadow: 10px 10px 10px rgb(190, 183, 175);
+}
+.logo img{
+    max-width: 180px;
+    height: auto;
+    
+}
+.navmenu{
+    display: flex;
+   
+}
+    
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 10px;
+    text-transform:uppercase;
+    padding: 1px 40px;
+    font-weight: 200;
+    transition: all .42s ease;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.navmenu a:hover{
+    color: #fc9468;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+    
+    }
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+    }
+    
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #EE1C47;
+}
+#menu_icon{
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+    overflow: hidden;
+    
+} 
+section{
+    padding: 15% 10%;
+}
+.main-home{
+    width:100%;
+    height: 100vh;
+    background-position: center;
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+@media(max-width:860px)
+{
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+@media(max-width:630px)
+{
+    .main-text{
+        transition: .4s;
+    }
+    .main-text img{
+        transition: .4s;
+        width: fit-content;
+        
+    }
+
+}
+@media(max-width:750px)
+{
+    .navmenu{ 
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 130vh;
+    background: #f9d88b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 30px;
+    transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+}    

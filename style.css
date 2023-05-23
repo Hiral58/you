@@ -1,0 +1,52 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    padding: 10px;
+    margin: 0;
+}
+.form-container{
+    height:660px;
+    width: 440px;
+    margin: auto;
+    border-style: groove;
+    padding: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    box-shadow: ;
+}
+.form-container .box{
+    padding: 20px 120px;
+    margin: 20px;
+}
+.btn{
+    
+    margin: 24px 134px;
+    width: 128px;
+    height: 60px;
+    cursor: pointer;
+    /*background-color:rgb(230, 165, 100);*/
+    background-color:transparent;
+    color:black;
+    border-style: solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    background-color:rgb(233, 103, 168);
+    color:azure;
+    transition: ease 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    margin: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box
+{
+    text-align: center;
+    justify-content: center;
+   
+}

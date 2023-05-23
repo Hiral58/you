@@ -1,0 +1,108 @@
+<html>
+<nav class="navbar">
+  <div class="logo"><a href="#">LOGO</a></div>
+  <ul class="menu">
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+  <ul class="icons">
+    <li><a href="#"><i class="fa fa-user"></i></a></li>
+    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+  </ul>
+  <div class="mobile-menu">
+    <i class="fa fa-bars"></i>
+  </div>
+</nav>
+<html>
+
+css
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 30px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icons li {
+  margin-left: 20px;
+}
+
+.icons li:first-child {
+  margin-left: 0;
+}
+
+.icons li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+php
+<?php
+// check if the user is logged in
+if(isset($_SESSION['user_id'])) {
+  // show the user's profile icon
+  echo '<li><a href="#"><i class="fa fa-user"></i></a></li>';
+} else {
+  // show the login/register icon
+  echo '<li><a href="#"><i class="fa fa-sign-in"></i></a></li>';
+}
+?>
